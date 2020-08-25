@@ -34,11 +34,12 @@ footer {
 }
 
 img {
-    padding-top: 2%;
+    margin-top: 50px;
     width: 32%;
     display: block;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto; 
+    border-radius: 20px;  
 }
 
 .description h1 span {
@@ -60,7 +61,7 @@ img {
     text-align: center;
     font-size: 1.5vw;
     padding: 5px;
-    width: 200px;
+    width: 15%;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -89,4 +90,24 @@ img {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+@media screen and (max-width: 570px){
+    img {
+        margin-top: 50px;
+        width: 90%;
+        border-radius: 20px;  
+    }
+
+    .description button {
+        margin-left: 0%;
+        margin-bottom: 5%;
+    }
+
+    footer {
+        font-family: sans-serif;
+        font-size: 1vw;
+        text-align: left;
+        margin-left:5%;
+    }
 }
